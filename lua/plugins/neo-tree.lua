@@ -15,6 +15,17 @@ return
   ---@module "neo-tree"
   ---@type neotree.Config?
   opts = {
-    -- add options here
+        filesystem = {
+            filtered_items = {
+                visible = true,          -- Show hidden files by default
+                hide_dotfiles = false,
+                hide_gitignored = false,
+            },
+            window = {
+                mappings = {
+                  ["zh"] = "toggle_hidden", -- 👈 Press 'zh' in NeoTree to toggle hidden files
+                },
+            },
+        },
   },
 }
