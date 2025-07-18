@@ -5,13 +5,14 @@ return {
   config = function()
     require("catppuccin").setup({
       flavour = "mocha", -- latte, frappe, macchiato, mocha
+      transparent_background = true,
       background = {
         light = "latte",
         dark = "mocha",
       },
       custom_highlights = function(colors)
-          return{  
-            AlphaHeader = {fg = colors.mauve}
+          return{
+            AlphaHeader = {fg = colors.mauve},
           }
       end,
     })
