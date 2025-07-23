@@ -11,7 +11,7 @@ return
         opts = {},
         config = function()
             require('mason-lspconfig').setup({
-                ensure_installed = { "lua_ls", "ts_ls", "clangd",}
+                ensure_installed = { "lua_ls", "ts_ls", "clangd","ruff","pyright", "gopls", "csharp_ls",}
             })
         end
     },
@@ -29,6 +29,19 @@ return
             lspconfig.clangd.setup({
                 capabilities = capabilities
             })
+            lspconfig.ruff.setup({
+                capabilities = capabilities
+            })
+            lspconfig.pyright.setup({
+                capabilities = capabilities
+            })
+            lspconfig.gopls.setup({
+                capabilities = capabilities
+            })
+            lspconfig.csharp_ls.setup({
+                capabilities = capabilities
+            })
         end
+
     }
 }
