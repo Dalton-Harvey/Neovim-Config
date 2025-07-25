@@ -19,5 +19,6 @@ vim.keymap.set({'n','v'}, '<leader>ca', vim.lsp.buf.code_action, {})
 -- Null_ls Keybindings
 vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
 
-
+-- Rest.nvim Keybindings
+vim.keymap.set("n", "<leader>rr", "<Cmd>Rest run<CR>", {})
 
