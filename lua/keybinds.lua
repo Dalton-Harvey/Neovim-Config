@@ -1,7 +1,6 @@
 -- NeoVim keybinds
 vim.keymap.set('i', '<C-[>', '<ESC>', {})
 
-
 -- Telescope keybinds
 local builtin = require('telescope.builtin')
 vim.keymap.set('n','<C-p>', builtin.find_files, {})
@@ -21,7 +20,6 @@ vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
 
 -- Rest.nvim Keybindings
 vim.keymap.set("n", "<leader>rr", "<Cmd>Rest run<CR>", {})
-
 
 -- Nvim-Surround Keybindings
 require("nvim-surround").setup({
