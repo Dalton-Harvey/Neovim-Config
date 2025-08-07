@@ -22,3 +22,13 @@ vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
 -- Rest.nvim Keybindings
 vim.keymap.set("n", "<leader>rr", "<Cmd>Rest run<CR>", {})
 
+
+-- Nvim-Surround Keybindings
+require("nvim-surround").setup({
+  keymaps = {
+    insert = "<C-Space>s",       -- Add surround in insert mode
+    insert_line = "<C-Space>S",  -- Surround entire line in insert mode
+ }
+})
+
+
