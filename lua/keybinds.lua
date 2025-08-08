@@ -1,5 +1,7 @@
 -- NeoVim keybinds
 vim.keymap.set('i', '<C-[>', '<ESC>', {})
+vim.keymap.set('n', '<Tab>', ":bnext<CR>", {})
+vim.keymap.set('n', '<S-Tab>', ":bprev<CR>", {})
 
 -- Telescope keybinds
 local builtin = require('telescope.builtin')
@@ -29,5 +31,4 @@ require("nvim-surround").setup({
     insert_line = "<C-Space>S",  -- Surround entire line in insert mode
  }
 })
-
 
