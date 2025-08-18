@@ -41,6 +41,10 @@ return
             lspconfig.csharp_ls.setup({
                 capabilities = capabilities
             })
+            lspconfig.gdscript.setup({
+                capabilities = capabilities
+            })
+
         end
 
     }
